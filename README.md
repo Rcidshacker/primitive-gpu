@@ -18,7 +18,7 @@
 
 <img src="docs/img/progress.gif" width="640">
 
-<sub>300 triangles, drawn one at a time</sub>
+<sub>1,000 triangles, drawn one at a time</sub>
 
 </div>
 
@@ -196,7 +196,7 @@ Beziers are 0.5 px strokes, so one per step adds very little. `-rep 19` adds 19 
 <summary><b>Animated GIF</b> · watch it draw</summary>
 
 ```powershell
-.\primitive.exe -gpu cuda\gpu_search.exe -i in.jpg -o draw.gif -n 300 -m 1 -r 512 -s 640
+.\primitive.exe -gpu cuda\gpu_search.exe -i in.jpg -o draw.gif -n 1000 -m 1 -r 512 -s 640
 ```
 Uses ImageMagick if it is on `PATH`, otherwise a built-in encoder.
 </details>
