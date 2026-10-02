@@ -9,6 +9,8 @@ import (
 	"image/gif"
 	"image/jpeg"
 	"image/png"
+
+	_ "golang.org/x/image/webp" // lets -i read .webp
 	"io/ioutil"
 	"math"
 	"os"

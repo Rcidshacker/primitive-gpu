@@ -166,7 +166,7 @@ func main() {
 			config.Count, config.Mode, config.Alpha, config.Repeat)
 
 		// GPU: search the whole segment on the GPU (from the current canvas), then replay it below.
-		// Modes the GPU does not implement (beziers) fall back to the CPU search.
+		// Modes the GPU does not implement fall back to the CPU search.
 		var gpuShapes [][]primitive.GPUShape
 		if GPU != "" && primitive.GPUSupports(config.Mode) {
 			var err error
